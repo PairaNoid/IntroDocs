@@ -1,0 +1,117 @@
+= AsciiDoctor Help and information Guide.
+:imagesdir: images/
+
+= General Setup and Terminal Walktrhrough
+
+.Step 1
+Press *Comand* and *Spacebar* to open up the *Terminal* window. 
+
+image::Terminal_Example.jpeg[screenshot] 
+
+.Step 2
+Now that your *Terminal* window is open, use the comand line to get into the directory called Desktop. You can achieve this with the comand line. First enter *ls* into your terminal window. This will allow you to see where in the terminal window you really are in.
+
+.Step 3
+Now you should get a window that looks like: 
+=====================================================
+
+image::Terminal_ls_window.jpeg[screenshot,300,200] 
+
+=====================================================
+Once you get here you now can use this 
+=========================
+_*Mkdir (filename.adoc)*_
+=========================
+Now that you are there create a file. This can be acomplished by using the *mkdir (filename)* comand. This should allow you to have a file now on your Desktop. That should look like this: 
+===================
+image::Mkdir_Example.jpeg[]
+===================
+.Step 4
+Now that we have our file that we will be working from #use the Terminal window to open this file in visual studio code.# To achieve this we go to our termianl window and use the keys *ls*. this shows us where we are. Then use the comand *cd (wherever you put your file)*. hit *ls* to see whats in this file. Now type *code (filename)* This should open up your Visual Studio Code application and allow you to start editing your AsciiDoctor file. 
+
+.Step 5
+Now that you have the Visual studio code open, start createing your AsciiDoctor Document. Hit *Control + K + R* This will open a window up for you to be enabled to see what youre creating in a window right next to you text. 
+
+.Step 6
+Now that we can see what we are doing use the first line to give a general base for what this document contains. Make sure to save your changes before you leave your AsciiDoctor file or shut it down. this can be acomplished by the open editors bar. there will be 3 options. First on the left is to make your editing software a horizontal. The second image the one in the middle is your save option. The third one is to close all your open Visual Studio Code files. 
+
+
+= Explanation of Github
+github.com is a place where coders store thier open or closed code in a repository (A place that things are stored within). So we need to hit the comand. This will help you use github to the maximum effect with minimum effort.
+=====================================================================================================================================================
+.Step 1
+First thing you need to do is create a new repository with your Github account or copy a file that someone else has made.
+
+.Step 2
+You need to now open up your terminal window. 
+
+.Step 3
+Change your Current Directory to the one with your project now
+
+.Step 4
+Initialize the local directory as a git repository 
+
+_git int_
+
+.Step 5
+Now you need to add your file to that git repository. 
+
+_git add (filename)_
+
+.Step 6
+Now you need to Commit the changes that you made to the document.
+
+_git commit -m "Changed x"_
+
+.Step 7
+At the top of your github repository make sure to copy the remote repository URL
+
+.Step 8
+Now in the terminal you need to make sure to add that URL from the remote repository, to allow you to push your changes from your local repository.
+
+_git remote add origin (insert URL)_
+
+.Step 9
+Now that we have that established make sure that it is correct. For that we need/want to Verify that URL
+
+_git remote -v_
+
+.Step 10
+Now we want to push those changes that we did to the file back to github.
+
+_git push -u origin master_
+
+.Side Note
+After every thing you do, We highly recomend that you check the status of your git progress.
+
+-> _git status_ <- #This is your best friend#
+=====================================================================================================================================================
+
+= How AsciiDoctor Markdown Really works
+Now Ascidoc is a simple way of making a text file. You literlly just type what you want and it will create the document for you. Asciidoc makes it quiet easy for less adept people to even use this form of "coding".
+People turn to Ascii because its #Simple, Straightforeward, and Bullshit free.#
+I learned HTML as my first Text file language. I spent most of my time with that fixing Syntaxical Errors that wasted so much time and energy rather than putting it into the actual document.
+
+.Ideas of Asciidoc
+* We want a easy form of documentaion
+
+** There is no "coding" of other Text file Langauges
+** This is Straight Forward typing very little syntax whatsoever
+
+* Uses for anything
+
+** Books
+** Papers
+** Slideshows
+** Really limtless documentation and ease of use
+
+* Why
+
+** Reliable
+** Easy to read 
+** Looks great
+
+    Choose a job you love, and you will never have to work a day in your life.  
+
+    ~Confucious
+
